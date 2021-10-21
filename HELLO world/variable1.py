@@ -3,4 +3,4 @@ Full_name = 'john smith'
 Age = 20
 Is_new = True
 print(Full_name)
-print(Age)
+print(Age)  

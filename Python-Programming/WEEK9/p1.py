@@ -1,5 +1,7 @@
 #for loop 
-# for i in rnage()
+#for i in range(value)
+# for i in range(starting point,ending point,step)
+# for i in range()
 for i in range(10):
   print("hello ajin!\n")
 for i in range(1,20):

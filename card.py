@@ -1,4 +1,4 @@
-import random
+import random233
 
 class Card:
     suit_names = ['Clubs', 'Diamonds', 'Hearts', 'Spades']
@@ -38,7 +38,7 @@ class Deck:
         self.cards.append(card)  #A method like this that uses another method without doing much work is sometimes called a veneer
 
     def shuffle(self):
-        random.shuffle(self.cards)
+        random233.shuffle(self.cards)
 
     def move_cards(self, hand, num):
         for i in range(num):

@@ -1,4 +1,4 @@
-n=[x//2 for x in range(20)]
+n = [x // 2 for x in range(20)]
 print(n)
 
 Python

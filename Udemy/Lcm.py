@@ -12,5 +12,4 @@ def lcm(a,b):
 
 a=int(input("Enter the first number\n"))
 b=int(input("Enter the second number\n"))
-l=lcm(a,b)
-print(l)
+lcm(a,b)

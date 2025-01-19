@@ -50,3 +50,24 @@ def even_odd(num):
         print("ODD")
     
 even_odd(6)
+
+# Recursion in Python
+
+#6.Write a recursive function to calculate the sum of first n natural numbers.
+
+def sum(n):
+    if n==0:
+        return 0
+    return n+ sum(n-1)
+print(sum(5))
+
+# 7. Write a recursive function to print all elements in a list. Hint : use a list & index as parameters.
+
+def print_list(list,idx=0):
+    if(idx==len(list)):
+        return 
+    print(list[idx])
+    print_list(list,idx+1)
+    
+fruits=["Apple","Banana","Mango","Orange","Grapes"]
+print_list(fruits)

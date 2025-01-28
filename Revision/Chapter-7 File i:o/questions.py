@@ -18,24 +18,49 @@
 
 
 # Search if the word “learning” exists in the file or not.
-def check_for_word():
-    word = input("Enter the word to search: ")
-    with open("test.txt","r") as f:
-        data=f.read()
-        if (word in data):
-            print(f"{word} is present in the file")
-        else:
-            print(f"{word} is not present in the file")
-check_for_word()
+# def check_for_word():
+#     word = input("Enter the word to search: ")
+#     with open("test.txt","r") as f:
+#         data=f.read()
+#         if (word in data):
+#             print(f"{word} is present in the file")
+#         else:
+#             print(f"{word} is not present in the file")
+# check_for_word()
 
-def check_for_line():
-    word = input("Enter the word to search: ")
-    data = True
-    line_no=1
-    with open("test.txt","r") as f:
-        while data:
-            data = f.readline()
-            if word in data:
-                print(f"{word} is present in line number {line_no}")
-            line_no+=1
-check_for_line()
+# def check_for_line():
+#     word = input("Enter the word to search: ")
+#     data = True
+#     line_no=1
+#     with open("test.txt","r") as f:
+#         while data:
+#             data = f.readline()
+#             if word in data:
+#                 print(f"{word} is present in line number {line_no}")
+#             line_no+=1
+# check_for_line()
+
+# WAF to find in which line of the file does the word “learning”occur first. Print -1 if word not found.
+
+# def check_for_line():
+#     word = input("Enter the word to search: ")
+#     data = True
+#     line_no=1
+#     with open("test.txt","r") as f:
+#         while data:
+#             data = f.readline()
+#             if word in data:
+#                 print(f"{word} is present in line number {line_no}")
+#             line_no+=1
+#     return -1
+# print(check_for_line())
+
+# From a file containing numbers separated by comma, print the count of even numbers.
+count = 0
+with open("test.txt","r") as f:
+    data = f.read()
+    data = data.split(",")
+    for i in data:
+        if (int(i)%2==0):
+            count+=1
+print(count)

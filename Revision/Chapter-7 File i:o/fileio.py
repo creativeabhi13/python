@@ -29,7 +29,7 @@
 
 # f.close() # close the file
 
-f=open("demo.txt","r") # open file in read mode
+# f=open("demo.txt","r") # open file in read mode
 
 # data =f.read() # read the data from file
 
@@ -50,7 +50,43 @@ f=open("demo.txt","r") # open file in read mode
 
 # Reading a file
 
-data2=f.readline() # reads one line at a time
+# data2=f.readline() # reads one line at a time
 
-print(data2)
-f.close() # close the file
+# print(data2)
+# f.close() # close the file
+
+# f= open("demo.txt","a+")
+# # f.write("abc")
+# print(f.read())
+# f.write("abc")
+# f.close() # close the file
+
+
+# truncate - to remove the content of the file
+
+# No Truncate - to keep the content of the file
+
+# r+ read + overwrite (ptr start) - no truncate 
+
+# w+ read + write overwrite (ptr start) - truncate
+
+# a+ read + append (ptr end) - no truncate
+
+
+# with syntax 
+# with open("demo.txt","r") as f:
+#     data=f.read()
+#     print(data)
+
+# with open("demo.txt","w") as f:
+#     f.write("Hello World")
+
+# deleting the file :
+# using the os module
+
+
+import os
+os.remove("test.txt")
+# Module (like a code library) is a file written by another programmer that generally has
+# a functions we can use.
+

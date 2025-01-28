@@ -1,0 +1,4 @@
+Hello world from Abhishek Kumar
+ We are learning File I/O 
+using Python.
+ I like Programming in Python. 
